@@ -12,13 +12,19 @@ export PATH="$HOME/.docker/bin:$PATH"
 
 export PATH="/usr/local/opt/go@1.20/bin:$PATH"
 
-bindkey -v
+# bindkey -v
 
-alias t='tmux'
+t() {
+  if tmux has-session -t main 2>/dev/null; then
+    tmux attach -t main
+  else
+    tmux new -s main
+  fi
+}
 alias la='ls -laF'
 alias gs='git status'
 alias gw='git worktree'
-alias gwls='git worktree list'
+alias gwl='git worktree list'
 alias gp='git pull --rebase'
 alias ta='tmux attach -t'
 alias tls='tmux ls'
@@ -35,9 +41,6 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} 
 fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
-
-
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
