@@ -1,2 +1,2 @@
 # dotfiles
-Personal bash, tmux, vim configs
+Personal bash, zsh, tmux, rainbarf, zimfw, vim configs
