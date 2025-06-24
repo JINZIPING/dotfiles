@@ -12,7 +12,7 @@ export PATH="$HOME/.docker/bin:$PATH"
 
 export PATH="/usr/local/opt/go@1.20/bin:$PATH"
 
-# bindkey -v
+bindkey -v
 
 t() {
   if tmux has-session -t main 2>/dev/null; then
@@ -26,12 +26,17 @@ alias gs='git status'
 alias gw='git worktree'
 alias gwl='git worktree list'
 alias gp='git pull --rebase'
+alias gl='git log --oneline'
+alias gd='git diff'
+alias gb='git branch -vv'
 alias ta='tmux attach -t'
 alias tls='tmux ls'
 alias tkill='tmux kill-session -t'
 alias dl='du -sh ./*'
 alias condaa='conda activate'
 
+autoload -Uz compinit
+compinit
 # zim
 ZIM_HOME=~/.zim
 # Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.
