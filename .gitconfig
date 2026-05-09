@@ -1,0 +1,15 @@
+[gpg]
+	format = ssh
+[user]
+	signingkey = /Users/ziping/.ssh/github
+	name = JINZIPING
+	email = mejasperj@outlook.com
+[commit]
+	gpgsign = true
+[alias]
+	lg = log --oneline --graph --all --decorate
+	st = status
+[core]
+	editor = vim
+[pull]
+	rebase = true

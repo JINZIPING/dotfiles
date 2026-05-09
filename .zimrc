@@ -1,8 +1,10 @@
+zmodule magicmace
 zmodule environment
 zmodule input
 zmodule utility
 zmodule git
 zmodule git-info
 zmodule prompt-pwd
-zmodule magicmace
 zmodule zdharma-continuum/fast-syntax-highlighting
+zmodule pabloariasal/zfm
+zmodule Aloxaf/fzf-tab
