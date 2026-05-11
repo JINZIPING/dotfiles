@@ -1,7 +1,7 @@
 [gpg]
 	format = ssh
 [user]
-	signingkey = /Users/ziping/.ssh/github
+	signingkey = ~/.ssh/github
 	name = JINZIPING
 	email = mejasperj@outlook.com
 [commit]
